@@ -1,0 +1,16 @@
+1- Server components can call server functions
+2- Client componetns can call server actions that can call server functions
+3- calling server actions in a client component either happens using useAction state or calling in a callback of an event or smth
+4- server actions have to be marked by use-server
+5- regular server functions do not need to be marked by use-server
+6- regular server functions can be cachhed using cachhed
+7- cache can be tagged and revalidated upon need using revalidateTag('tagname')
+8- caching on server components happens using caching their server functions
+9- caching on client components happens through using react query that calls server actions and then handles the cache itself
+10- server componets needs to be defined wether to be cached or dynamic using suspense
+11- caching server functions only happen for 1 request so if 3 parts of the page calling the same method such as get currrent user, then it will only be called once but it gets revalidated upon request completion
+12- route groups are good for grouping routes that could have an additional layout
+13- layoouts be default inherit the root layout
+14- api routes are actually serverless so like a webhook 
+15- api routes are technically serveless so they might not work well with https based data as there is no actual polling
+16- edge/serverless are different from node and for example file system dont work on edge as there is no actual server its just a temporary vm that spins up, exectues and shuts down

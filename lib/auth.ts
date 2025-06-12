@@ -5,6 +5,7 @@ import { db } from '@/db'
 import { users } from '@/db/schema'
 import * as jose from 'jose'
 import { cache } from 'react'
+import { eq } from 'drizzle-orm'
 
 // JWT types
 interface JWTPayload {
@@ -148,3 +149,5 @@ export async function deleteSession() {
   const cookieStore = await cookies()
   cookieStore.delete('auth_token')
 }
+
+

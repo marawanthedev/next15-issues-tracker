@@ -103,10 +103,10 @@ export const FormSelect = forwardRef<HTMLSelectElement, FormSelectProps>(
       >
         {options
           ? options.map((option) => (
-              <option key={option.value} value={option.value}>
-                {option.label}
-              </option>
-            ))
+            <option key={option.value} value={option.value}>
+              {option.label}
+            </option>
+          ))
           : children}
       </select>
     )
