@@ -63,7 +63,7 @@ const DashboardIssues = async () => {
                 <Button>
                     <span className="flex items-center">
                         <PlusIcon size={18} className="mr-2" />
-                        Create Issue here
+                        Create Issue
                     </span>
                 </Button>
             </Link>
