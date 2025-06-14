@@ -13,7 +13,7 @@
     "test": "vitest",
     "test:ui": "vitest --ui",
     "test:coverage": "vitest run --coverage",
-    "postbuild": "npx @cloudflare/next-on-pages"
+    "postbuild": "npx @cloudflare/next-on-pages --skip-build"
   },
   "dependencies": {
     "@neondatabase/serverless": "^0.10.4",
